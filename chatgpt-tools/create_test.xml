@@ -1,0 +1,5 @@
+<tool_call>
+    <tool>CREATE_FILE</tool>
+    <path>workspace/created.txt</path>
+    <content>Hello from CREATE_FILE</content>
+</tool_call>

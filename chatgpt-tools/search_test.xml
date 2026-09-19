@@ -1,0 +1,4 @@
+<tool_call>
+    <tool>SEARCH</tool>
+    <query>ToolCall</query>
+</tool_call>

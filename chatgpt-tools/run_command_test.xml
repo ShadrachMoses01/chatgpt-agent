@@ -1,0 +1,4 @@
+<tool_call>
+    <tool>RUN_COMMAND</tool>
+    <command>python --version</command>
+</tool_call>

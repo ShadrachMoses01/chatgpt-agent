@@ -1,0 +1,5 @@
+<tool_call>
+    <tool>WRITE_FILE</tool>
+    <path>workspace/output.txt</path>
+    <content>Hello from WRITE_FILE</content>
+</tool_call>

@@ -1,0 +1,4 @@
+<tool_call>
+    <tool>LIST_FILES</tool>
+    <path>.</path>
+</tool_call>

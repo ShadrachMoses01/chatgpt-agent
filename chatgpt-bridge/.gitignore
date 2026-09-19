@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Test / build caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Runtime state (created while the bridge runs; never commit)
+todos.json
+
+# macOS / editors
+.DS_Store
+__MACOSX/
+*.swp
+*~
+.idea/
+.vscode/

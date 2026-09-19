@@ -1,0 +1,3 @@
+<tool_call>
+    <tool>GIT_DIFF</tool>
+</tool_call>

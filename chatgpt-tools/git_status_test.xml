@@ -1,0 +1,3 @@
+<tool_call>
+    <tool>GIT_STATUS</tool>
+</tool_call>

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatgpt-agent-tools"
+version = "0.1.0"
+description = "Tool execution engine for the ChatGPT agent bridge"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.setuptools.packages.find]
+include = ["protocol", "protocol.*", "dispatcher", "dispatcher.*", "tools", "tools.*", "models", "models.*"]

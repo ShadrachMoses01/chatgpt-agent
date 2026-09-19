@@ -1,0 +1,81 @@
+def execute():
+    return """
+HELP
+
+Available Tools
+
+READ_FILE              Read a file (optional: start, end line range)
+LIST_FILES             List files in a directory
+SEARCH                 Search text across the project
+WRITE_FILE             Write content to a file
+CREATE_FILE            Create a new file
+DELETE_FILE            Delete a file
+PATCH_FILE             Find-and-replace text in a file
+RUN_COMMAND            Execute a shell command
+RUN_INTERACTIVE        Execute a command via PTY (supports interactive programs)
+RUN_TESTS              Run the test suite
+ TODO_ADD              Add a todo (deduplicates by title, optional: priority, category)
+ TODO_LIST             List todos
+ TODO_DONE             Mark a todo as done
+GIT_STATUS             Git working tree status
+GIT_DIFF               Git diff
+GIT_LOG                Git log (optional: limit)
+GIT_SHOW               Show a commit
+GIT_BLAME              Blame a file
+HELP                   Show this message
+TOOL_INFO              Show tool schemas/capabilities
+
+--- Code Intelligence ---
+
+FIND_REFERENCES        Find references to a symbol
+FIND_DEFINITION        Find definition location of a symbol
+READ_SYMBOL            Read source of a function/class by name
+PATCH_SYMBOL           Replace a function/class body by symbol (AST-safe)
+TRACE_CALL_GRAPH       Trace the call graph of a symbol
+IMPACT_ANALYSIS        Analyze impact of changing a symbol
+
+--- Edit Safety ---
+
+REPLACE_FUNCTION       Replace a function body by name
+ADD_FUNCTION           Add a new function to a file
+DELETE_FUNCTION        Delete a function from a file
+VERIFY_PATCH           Verify a patch is valid Python
+
+--- Project Understanding ---
+
+PROJECT_MAP            Show project structure map
+
+--- Testing ---
+
+RUN_TEST               Run a specific test
+
+--- Git History ---
+
+GIT_LOG                Show git log (optional: limit)
+GIT_SHOW               Show a commit
+GIT_BLAME              Blame a file
+
+Examples
+
+<tool_call>
+  <tool>READ_FILE</tool>
+  <path>README.md</path>
+</tool_call>
+
+<tool_call>
+  <tool>READ_SYMBOL</tool>
+  <symbol>execute</symbol>
+</tool_call>
+
+<tool_call>
+  <tool>REPLACE_FUNCTION</tool>
+  <path>tools/registry.py</path>
+  <symbol>get_handler</symbol>
+  <content>def get_handler(name): return HANDLERS.get(name)</content>
+</tool_call>
+
+<tool_call>
+  <tool>TOOL_INFO</tool>
+  <tool>READ_FILE</tool>
+</tool_call>
+"""

@@ -1,0 +1,4 @@
+<tool_call>
+    <tool>READ_FILE</tool>
+    <path>README.md</path>
+</tool_call>
